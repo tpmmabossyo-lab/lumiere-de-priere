@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumière de Prière</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f1e8;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background: #6b4eff;
+      color: white;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+    }
+
+    header p {
+      font-size: 20px;
+    }
+
+    nav {
+      background: white;
+      padding: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #6b4eff;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .priere {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    button {
+      background: #6b4eff;
+      color: white;
+      border: none;
+      padding: 14px 25px;
+      border-radius: 10px;
+      font-size: 17px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.85;
+    }
+
+    footer {
+      margin-top: 40px;
+      background: #222;
+      color: white;
+      padding: 25px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <h1>🙏 Lumière de Prière</h1>
+    <p>Un espace pour prier, méditer et garder la foi.</p>
+  </header>
+
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#priere">Prière</a>
+    <a href="#verset">Verset</a>
+  </nav>
+
+  <section id="accueil">
+    <h2>Bienvenue sur Lumière de Prière</h2>
+    <p>
+      Prends quelques instants pour te recueillir,
+      méditer et prier.
+    </p>
+  </section>
+
+  <section id="priere">
+    <h2>🙏 Prière du jour</h2>
+
+```
+<p class="priere">
+  Seigneur, guide mes pas aujourd'hui.<br>
+  Donne-moi la force dans les moments difficiles,
+  la sagesse pour faire les bons choix
+  et la paix dans mon cœur.<br><br>
+
+  Que ta lumière m'accompagne chaque jour.
+  Amen. 🙏
+</p>
+
+<button onclick="alert('🙏 Que la paix soit avec toi !')">
+  Je prie 🙏
+</button>
+```
+
+  </section>
+
+  <section id="verset">
+    <h2>📖 Verset du jour</h2>
+
+```
+<p class="priere">
+  « L'Éternel est mon berger : je ne manquerai de rien. »
+</p>
+
+<p><strong>Psaume 23:1</strong></p>
+```
+
+  </section>
+
+  <footer>
+    <p>© 2026 Lumière de Prière</p>
+    <p>🙏 Que Dieu vous bénisse</p>
+  </footer>
+
+</body>
+</html>
