@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumière de Prière</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #fff8c4, #ffd84d, #fff1a8);
+      color: #3b2a00;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    header {
+      padding: 30px 20px;
+      background: rgba(255, 215, 70, 0.9);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    header h1 {
+      font-size: 42px;
+      color: #fff;
+      text-shadow: 0 3px 8px #8a6500;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 70px 20px 40px;
+    }
+
+    .lumiere {
+      font-size: 80px;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        transform: scale(1);
+        filter: drop-shadow(0 0 5px #fff);
+      }
+      to {
+        transform: scale(1.12);
+        filter: drop-shadow(0 0 25px #fff700);
+      }
+    }
+
+    .hero h2 {
+      font-size: 35px;
+      margin: 20px 0;
+    }
+
+    .hero p {
+      font-size: 19px;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.8);
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      color: #b88600;
+      font-size: 27px;
+      margin-bottom: 15px;
+    }
+
+    .verset {
+      font-size: 21px;
+      line-height: 1.6;
+      font-style: italic;
+    }
+
+    .reference {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    button {
+      border: none;
+      background: #d9a900;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 15px 30px;
+      border-radius: 50px;
+      cursor: pointer;
+      margin-top: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.08);
+      background: #b88700;
+    }
+
+    #priere {
+      display: none;
+      margin-top: 20px;
+      line-height: 1.7;
+      font-size: 18px;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 25px;
+      background: rgba(184, 134, 0, 0.9);
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      .hero h2 {
+        font-size: 28px;
+      }
+
+      .lumiere {
+        font-size: 60px;
+      }
+
+      .card {
+        margin: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>✨ Lumière de Prière ✨</h1>
+    <p>Un moment de paix, de foi et d'espérance 🙏</p>
+  </header>
+
+  <section class="hero">
+
+    <div class="lumiere">🕯️</div>
+
+    <h2>Bienvenue dans Lumière de Prière</h2>
+
+    <p>
+      Prends quelques instants pour te rapprocher de Dieu,
+      méditer et laisser entrer la lumière dans ton cœur.
+    </p>
+
+    <div class="card">
+      <h3>📖 Verset du jour</h3>
+
+      <p class="verset">
+        « L'Éternel est ma lumière et mon salut :
+        de qui aurais-je peur ? »
+      </p>
+
+      <p class="reference">— Psaume 27:1</p>
+    </div>
+
+    <div class="card">
+      <h3>🙏 Ma prière</h3>
+
+      <p>
+        Clique sur le bouton pour commencer un moment de prière.
+      </p>
+
+      <button onclick="afficherPriere()">
+        🙏 Je veux prier
+      </button>
+
+      <p id="priere">
+        Seigneur, merci pour cette nouvelle journée.<br><br>
+        Donne-moi la force d'avancer, la sagesse dans mes décisions
+        et la paix dans mon cœur.<br><br>
+        Protège ma famille et ceux que j'aime.
+        Guide mes pas et fais briller ta lumière sur ma vie.<br><br>
+        Amen. 🙏✨
+      </p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>✨ Lumière de Prière — Que la lumière accompagne tes pas ✨</p>
+  </footer>
+
+  <script>
+    function afficherPriere() {
+      const priere = document.getElementById("priere");
+
+      if (priere.style.display === "block") {
+        priere.style.display = "none";
+      } else {
+        priere.style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+</html>
